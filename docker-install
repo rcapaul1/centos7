@@ -20,4 +20,3 @@ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce
 yum install docker-ce docker-compose -y
 systemctl enable docker.service
 systemctl start docker.service
-docker login
