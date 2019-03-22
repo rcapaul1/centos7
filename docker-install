@@ -1,5 +1,5 @@
 #!/bin/bash
-yum install epel-release -y && yum install git wget -y && yum update -y
+yum install epel-release -y && yum install git wget net-tools -y && yum remove firewalld -y && yum update -y
 yum remove docker \
                   docker-client \
                   docker-client-latest \
