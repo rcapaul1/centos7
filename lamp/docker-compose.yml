@@ -8,8 +8,6 @@ services:
     db:
         image: mariadb:10.2
         restart: always
-        volumes:
-          - ./mysql:/var/lib/mysql
         environment:
           - MYSQL_ROOT_PASSWORD=dimension2
           - MYSQL_PASSWORD=dimension2
