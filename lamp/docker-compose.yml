@@ -19,3 +19,5 @@ services:
         restart: always
         volumes:
           - d:/html:/var/www/html
+        ports:
+            80:80
