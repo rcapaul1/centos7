@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+    os:
+        image: centos
+        restart: always
+
+    db:
+        image: mariadb:10.2
+        restart: always
+        volumes:
+          - db:/var/lib/mysql
+        environment:
+          - MYSQL_ROOT_PASSWORD=dimension2
+          - MYSQL_PASSWORD=dimension2
+          - MYSQL_DATABASE=testdb
+          - MYSQL_USER=testuser
+
+    php:
+        image: php:7.2-apache
+        restart: always
+        volumes:
+          - ./html:/var/www/html
