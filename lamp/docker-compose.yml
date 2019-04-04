@@ -9,7 +9,7 @@ services:
         image: mariadb:10.2
         restart: always
         volumes:
-          - d:/mysql:/var/lib/mysql
+          - d:/:/var/lib/mysql
         environment:
           - MYSQL_ROOT_PASSWORD=dimension2
           - MYSQL_PASSWORD=dimension2
