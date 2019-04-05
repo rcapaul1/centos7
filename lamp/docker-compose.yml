@@ -11,7 +11,7 @@ services:
         image: mariadb:10.2
         restart: always
         volumes:
-          - ./:/var/lib/mysql
+          - ../:/var/lib/mysql
         environment:
           - MYSQL_ROOT_PASSWORD=dimension2
           - MYSQL_PASSWORD=dimension2
@@ -22,6 +22,6 @@ services:
         image: php:7.2-apache
         restart: always
         volumes:
-          - ./html:/var/www/html
+          - ../html:/var/www/html
         ports:
           - 80:80
