@@ -4,6 +4,8 @@ services:
     os:
         image: centos
         restart: always
+        ports:
+          - 22:22
 
     db:
         image: mariadb:10.2
