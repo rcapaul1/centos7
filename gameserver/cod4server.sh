@@ -4,4 +4,4 @@ yum install epel-release -y && yum install mailx postfix curl wget bzip2 gzip un
 
 adduser cod4server
 passwd cod4server
-su - cod4server "git clone https://github.com/rcapaul1/centos7.git && bash centos7/gameserver/cod4server-install.sh"
+su - cod4server
