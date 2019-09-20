@@ -7,4 +7,4 @@ yum install epel-release -y && yum install mailx postfix curl wget bzip2 gzip un
 
 cd /home/cssserver
 su cssserver -c "wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh cssserver"
-su cssserver -c "./cssserver install"
+su cssserver -c "./cssserver ai"
