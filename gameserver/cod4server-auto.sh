@@ -7,4 +7,4 @@ yum install epel-release -y && yum install mailx postfix curl wget bzip2 gzip un
 
 cd /home/cod4server
 su cod4server -c "wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh cod4server"
-su cod4server -c "./cod4server install"
+su cod4server -c "./cod4server ai"
