@@ -8,4 +8,4 @@ yum install epel-release -y && yum install mailx postfix curl wget bzip2 gzip un
 cd /home/mcserver
 
 su mcserver -c "wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh mcserver"
-su mcserver -c "./mcserver install"
+su mcserver -c "./mcserver ai"
